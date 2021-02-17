@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.middle{
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+    
+    .computerRepair{
+        padding-top: 10%;
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-size: 35px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .desc{
+        font-family: "Poppins", sans-serif;
+        color: gray;
+        text-align: center;
+        font-weight: 20;
+        font-size: 16px;
+    }
+    .cards{
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 50px;
+       
+    }
+
+   .root{
+    width: 300px;
+    }   
+    
+    .cardImage{
+    height: 250px;
+    transition: transform .2s;
+    }
+    
+    .cardImage {
+        width: 300px;
+    }
+
+    .cardImage:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+    background-color: rgba(8, 8, 8, 0.644);
+    }
+    .media {
+        height: 200px,
+    }
+    
+    .innerCard{
+        font-family: "Poppins", sans-serif !important;
+        font-weight: 800 !important;
+    }
+    .innerCard:hover{
+       color: red;
+    }
+    .button{
+      display: grid;
+      justify-content: center;
+      align-self: center;
+      margin: auto;
+      text-decoration: underline;
+      font-size: 20px;
+      font-weight: 800;
+      font-family:"Poppins", sans-serif;
+      color: red;
+    }
+    .button:hover{
+        color:black;
+    }
+
+    @media only screen and (max-width: 700px) {
+
+        .cards{
+            display: flex;
+            box-sizing: border-box;
+            flex-direction:column;
+            margin-top: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        .root{
+            margin-top: 50px;
+        }
+    }

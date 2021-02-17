@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+*{
+    animation: fadeInAnimation ease 2s ;
+}
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
+
+.headerUpper{
+    padding: 0 1% 0 1%;
+}
+.part1{
+    background-image: url(../assets/bgImage.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.uppderHeaderText{  
+    align-items: center;
+    color: white;
+   
+}
+.divForUpper{
+    display: inline-block;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1% 0 0 0;
+    vertical-align: middle;
+    font-family: "Poppins", sans-serif;
+}
+.innerText{
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.no{
+    color:red;
+    font-size: 30px;
+    align-items: center;
+}
+.no:hover{
+color: white;
+}
+@media only screen and (max-width: 600px) {
+    .divForUpper {
+        display:none;
+    }
+    .contanier{
+        padding: 0%;
+    }
+    .des{
+        text-align: center;
+        font-variant: normal;
+        width: 100%;
+    }
+    .italic{
+    text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+    }
+  }
+ 
+  .typoHeading{
+    font-family: 'Playfair Display SC', serif !important;
+    font-weight: 800 !important;
+    color: white;
+    padding-top:100px;
+}
+
+ .computerHeading{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 1000;
+ }
+ .des{
+    color: white;
+    padding: 20px 0 20px 0;
+ }
+ .italic{
+     font-style: italic;
+     color: rgb(255, 255, 255);
+     font-weight: 600;
+     font-size: 20px;
+ }
+ .call{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+ }
+ .callIcon{
+    display: grid;
+    background-color: black;
+    position:absolute;  
+    border-radius: 40px;
+    height: 80px;
+    width: 80px;
+    align-items: center;
+}
+.icon{
+    margin: auto;
+    color: white;
+
+}
+.callbase{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 3px;
+    background-image: linear-gradient( #ffe70ffb,  #ffc609);
+    border-radius: 40px;
+    height: 80px;
+    width: 100%;
+    margin-left: 5px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.tollFree{
+    text-transform: uppercase;
+text-align: center;
+    font-size:22px;
+    font-weight: 800;
+    margin: auto;
+}
+.number{
+    font-size: 35px;
+text-align: center;
+font-weight: 800;
+margin: auto;
+}
+.calls{
+    color: black;
+    text-decoration: none;
+}
+.calls:hover{
+color: black;
+}
+@media only screen and (max-width: 300px) {
+    .callbase{
+       height: 200px ;
+        width: 100%;
+       align-items: center;
+        align-self: center;
+        margin: auto;
+    }
+    .tollFree{
+        font-size:25px;
+        font-weight: 800;
+        text-align: center;
+        padding-left: 20px;
+    }
+    .number{
+        font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    }
+    .call{
+        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .callbase{
+       height: 200px ;
+        width: 100%;
+       align-items: center;
+        align-self: center;
+        margin: auto;
+    }
+    .tollFree{
+        font-size:10px;
+        font-weight: 800;
+        text-align: center;
+        padding-left: 20px;
+    }
+    .number{
+        font-size: 15px;
+    font-weight: 800;
+    text-align: center;
+    }
+    .call{
+        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.answer{
+    font-family: 'Dancing Script', cursive;
+font-size: 30px;
+color: white;
+padding-top:30px ;
+}
+
+.avatar{
+    height: 100%;
+    width: 100%;
+}
+.combo{
+
+display: flex;
+flex-direction: row;
+}
+.image{
+    display: none;
+}
+@media only screen and (min-width: 1000px) {
+.image{
+    position: relative;
+  animation: myfirst 5s ;
+  animation-direction: alternate;
+display: block;
+}
+@keyframes myfirst {
+    0%   { right: -200px; top: 0px;}
+    50%  { right: 100px; top: 0px;}
+    100%  { right: 0px; top: 0px;}
+   
+  }
+}
