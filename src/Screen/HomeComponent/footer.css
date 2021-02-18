@@ -11,11 +11,17 @@
 }
 .footerContent{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5% 0 5% 0;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+    .desWithLogo, .listContent, .addressDiv{
+        width: 100% !important;
+    }
+  }
 .headerTitle{
 color: white;
 font-family: "Poppins", sans-serif;
@@ -39,13 +45,14 @@ text-decoration-line: underline;
     justify-content: center;
     align-items: center;
 }
+
 .logoDes{
     color: #d8d4d4;
     line-height: 28px;
 }
 .desWithLogo{
     flex-direction: column;
-    width:30%;
+    width:25%;
 }
 .footerNumber{
     color: #787878;
@@ -58,11 +65,12 @@ text-decoration-line: underline;
     font-weight: 300;
 }
 .addressDiv{
-    width: 30%;
+    width: 25%;
 }
 .SocialContact{
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }   
 .arrowInner{
 border-width: 0.5px;

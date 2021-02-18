@@ -12,7 +12,6 @@ import Proton from 'proton-engine';
 import ParticlesBg from 'particles-bg'
 const Home = () => {
     const width = window.innerWidth;
-    const [sticky, setSticky] = useState(null);
     let config = {
         num: [4, 7],
         rps: 0.1,

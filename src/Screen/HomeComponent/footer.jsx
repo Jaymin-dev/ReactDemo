@@ -54,7 +54,6 @@ const Footer = () => {
                         </p>
                     </div>
 
-                    <div>
                         <List
                             header={info[0].header}
                             item1={info[0].item1}
@@ -63,9 +62,7 @@ const Footer = () => {
                             item4={info[0].item4}
                             item5={info[0].item5}
                         />
-                    </div>
 
-                    <div>
                         <List
                             header={info[1].header}
                             item1={info[1].item1}
@@ -74,7 +71,6 @@ const Footer = () => {
                             item4={info[1].item4}
                             item5={info[1].item5}
                         />
-                    </div>
 
                     <div className="addressDiv" >
                         <h4 className="headerTitle">Get In Touch</h4>
@@ -108,6 +104,7 @@ const Footer = () => {
                     </div>
 
                 </div>
+              
                 <div>
                     <div
                         className="dividers"
@@ -117,7 +114,7 @@ const Footer = () => {
                         <p className="copyrightText">Created by : ThemeArc.</p>
                     </div>
                 </div>
-            </Container>
+                </Container>
         </div>
 
     );
